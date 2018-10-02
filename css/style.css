@@ -1,0 +1,237 @@
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color: #505050;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: #11151c;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+  }
+  
+  a:hover, a:focus {
+    color: #11df3e;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  ::-moz-selection {
+    background-color: #11df3e;
+    color: #FFF;
+  }
+  
+  ::selection {
+    background-color: #11df3e;
+    color: #FFF;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none
+  }
+  
+  ul.list-style, ol.list-style {
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  
+  ul.list-style {
+    list-style-type: disc;
+  }
+  
+  ol.list-style {
+    list-style-type: decimal;
+  }
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 2px solid #e8eaed;
+  }
+  textarea.input {
+    padding: 15px;
+    height: 90px;
+  }
+ 
+  .nav {
+    border-bottom: 1px solid #e8eaed;
+  }
+  
+  .nav:after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .nav.shadow-active:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .navbarT {
+    text-align: center;
+  }
+  
+  .navbarT>.container {
+    position: relative;
+  }
+  
+  .nav-social {
+    float: left;
+    padding: 10px 0px;
+  }
+  
+  .nav-social li {
+    display: inline-block;
+  }
+  
+  .nav-social li a {
+    display: block;
+    padding: 15px;
+    line-height: 20px;
+  }
+
+  .navbarL {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .navbarL .logo {
+    display: inline-block;
+    line-height: 70px;
+    height: 70px;
+  }
+  
+  .navbarL .logo>img {
+    width: 100%;
+    max-height: 70px;
+  }
+  
+ 
+  .navbarB {
+    float: right;
+    padding: 10px 0px;
+  }
+  
+  .navbarB>button {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+  }
+  
+  .nav-info {
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translate(-50%, 10px);
+    -ms-transform: translate(-50%, 10px);
+    transform: translate(-50%, 10px);
+    opacity: 0;
+    visibility: hidden;
+    max-width: 960px;
+    width: 100%;
+    padding: 60px 5%;
+    background: #1b1c1e;
+    z-index: 1;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  .log{
+    font-size: 15px;
+    text-align: center;
+  
+  }
+  .reg{
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .nav-menu {
+    position: relative;
+    text-align: center;
+    float: none;
+  }
+  
+  .nav-menu>li {
+    float: none;
+    display: inline-block;
+  }
+  
+  .nav-menu>li>a {
+    display: block;
+    padding: 25px 15px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .nav-menu li.mydropdown {
+    position: relative;
+  }
+  
+  .nav-menu li.mydropdown>a:after {
+    font-family: 'FontAwesome';
+    content: "\f0d7";
+    margin-left: 5px;
+  }
+  
+  .nav-menu li.my-dropdown>.my-dropdown-dropdown{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    text-align: left;
+    z-index: 60;
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .nav-menu li.my-dropdown:hover>.my-dropdown-dropdown{
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-menu li.my-dropdown>.my-dropdown-dropdown .my-dropdown-body {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .my-dropdown-dropdown .my-dropdown-list li {
+    border-bottom: 1px solid #e8eaed;
+  }
+  
+  .my-dropdown-dropdown .my-dropdown-list li a {
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+  }
+  
